@@ -10,7 +10,7 @@ How to run the file locally:
 How to run the script manually:
 1. Open the terminal/cmd.
 2. Navigate to the folder where all the files are at.
-3. Write this line: "python subreddit_finder.py(SUBREDDITNAME), where SUBREDDITNAME is the subreddit you want to check the top posts for.
+3. Write this line: "python subreddit_finder.py".
 4. You should get in return the correct values. If your input was wrong (no subreddit found, or no posts), you will get a matching message.
 
 Notes:
