@@ -29,7 +29,7 @@ suffix = '/.json'
 
 
 def top5_to_string(top5child):
-    str_to_return = '<h3 style="font-family:verdana;"> Here are the top 5 posts in this subreddit: </h3>'
+    str_to_return = '<h3 style="font-family:verdana;"> Here are the top posts in this subreddit: </h3>'
     for child in top5child:
         for key, value in child.items():
             if key == 'Link':
@@ -78,6 +78,8 @@ def get_subreddit(subreddit_name):
         length = len(children_lst)
         index = 0
         top5child, index = get_top5(children_lst, length, index)
+        if len(top5child) == 0:
+            return "All of this subreddit posts are pinned, so not so popular...."
         return top5_to_string(top5child)
 
 
