@@ -15,10 +15,10 @@ How to run the script manually:
 
 Notes:
 1. I decided to return the hottest 5 posts on the subreddit, not the top 5 because the top is date dependant, and the hot section is decided by reddit's algorithm.
-2. Overview of how the app works: the app takes the subreddit from the input, running some tests on the input to make sure its right, and if so creates the needed json file. From there, it creates the top 5 posts (looping the dictionary), and printing it nicely.
-3. The top posts that you get back are all the posts **without** the pinned posts, as most of the time (if not always), they are only messages from moderators, and are not the top posts in the subreddit. 
-4. I decided to integrate both approaches. While the UI isn't very appealing, both of them work together well in the website.
-5. I wrote many tests to check the code, but removed them, so the code won't be so loaded.
-6. I have written the whole script in Python.
-7. I have decided to use Google Cloud as the server to host the website, the link is: https://redditfeed1.uc.r.appspot.com/
+2. I have decided to use Google Cloud as the server to host the website, the link is: https://redditfeed1.uc.r.appspot.com/
+3. Overview of how the app works: the app takes the subreddit from the input, running some tests on the input to make sure its right, and if so creates the needed json file. From there, it creates the top 5 posts (looping the dictionary), and printing it nicely.
+4. The top posts that you get back are all the posts **without** the pinned posts, as most of the time (if not always), they are only messages from moderators, and are not the top posts in the subreddit. 
+5. I decided to integrate both approaches. While the UI isn't very appealing, both of them work together well in the website.
+6. I wrote many tests to check the code, but removed them, so the code won't be so loaded.
+7. I have written the whole script in Python.
 8. My best friend during this project was the internet. I learnt a lot.
