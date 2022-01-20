@@ -1,4 +1,3 @@
-#+- RedditFeed
 How to run the file locally:
 1. Choose the folder you want to run the file locally from.
 2. Clone the git rep (https://github.com/omerbar1/RedditFeed)
