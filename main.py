@@ -6,6 +6,7 @@ import json
 app = Flask(__name__)
 
 
+# the run_app is what essentially runs the web app.
 @app.route("/")
 def run_app():
     subreddit = request.args.get("subreddit", "")
@@ -28,6 +29,7 @@ baseurl = 'https://www.reddit.com'
 suffix = '/.json'
 
 
+# takes the top 5 posts we found, and concatenate them to a one long string to return and print.
 def top5_to_string(top5child):
     str_to_return = '<h3 style="font-family:verdana;"> Here are the top posts in this subreddit: </h3>'
     for child in top5child:
@@ -40,6 +42,7 @@ def top5_to_string(top5child):
     return str_to_return
 
 
+# gets the posts list of the relevant subreddit, its length and index in the list, and takes the top 5 out of the lst.
 def get_top5(children_lst, length, index):
     child_to_post = []
     for i in range(index, length):
@@ -60,6 +63,7 @@ def get_top5(children_lst, length, index):
     return child_to_post, index
 
 
+# gets a subreddit name as input, creates the correct url, makes a request and uses the function above for the output.
 def get_subreddit(subreddit_name):
     headers = {
         'user-agent': 'Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_7 rv:5.0; en-US) AppleWebKit/533.31.5 (KHTML, '

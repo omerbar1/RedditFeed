@@ -5,6 +5,7 @@ baseurl = 'https://www.reddit.com'
 suffix = '/.json'
 
 
+# takes the top 5 posts we found, and prints them one by one to the user.
 def top5_to_print(top5child):
     print('Here are the top posts in this subreddit:\n')
     for child in top5child:
@@ -13,6 +14,7 @@ def top5_to_print(top5child):
         print('-----------------------------------')
 
 
+# gets the posts list of the relevant subreddit, its length and index in the list, and takes the top 5 out of the lst.
 def get_top5(children_lst, length, index):
     child_to_post = []
     for i in range(index, length):
@@ -33,6 +35,7 @@ def get_top5(children_lst, length, index):
     return child_to_post, index
 
 
+# gets a subreddit name as input, creates the correct url, makes a request and uses the function above for the output.
 def subreddit_finder(subreddit_name):
     headers = {
         'user-agent': 'Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_7 rv:5.0; en-US) AppleWebKit/533.31.5 (KHTML, '
