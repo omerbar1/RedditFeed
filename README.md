@@ -1,5 +1,5 @@
 Shared steps fot both running the file locally and running the script:
-1.1. Choose the folder you want to run the file locally from.
+1. Choose the folder you want to run the file locally from.
 2. Clone the git rep (https://github.com/omerbar1/RedditFeed)
 3. Open the terminal/cmd.
 4. Navigate to the folder where all the files are at.
@@ -8,7 +8,7 @@ Shared steps fot both running the file locally and running the script:
 
 How to run the file locally:
 1. write this line: "python main.py".
-2. You should see this line: "* Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)", navigate to the adress.
+2. You should see this line: "* Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)", navigate to the address.
 3. Use the website according to the instructions. input a subreddit, and get the output back.
 
 How to run the script manually:
